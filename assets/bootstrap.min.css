@@ -57,6 +57,7 @@ a:hover{
 }
 
 .text-center-Python{
+    text-align: center;
     text-decoration: underline;
 }
 
