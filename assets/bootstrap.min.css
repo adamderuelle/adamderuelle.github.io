@@ -63,3 +63,7 @@ a:hover{
 .row{
     margin-top: 30px;
 }
+
+.hide{
+    color: white;
+}

@@ -3,7 +3,7 @@
 
       <meta name="author" content="">
 
-      <title>Contactez moi</title>
+      <title>Formulaire</title>
 
 
       
@@ -55,15 +55,24 @@
   <main>
 
     <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">adam.deruelle@gmail.com</h1>
-          <p class="lead text-muted">07 6* ** ** *8 | 46 rue de la Plébe</p>
-          <p>
-            <a href="me.html" class="btn btn-primary my-2">Embauchez moi</a>
-          </p>
-        </div>
-      </div>
+        <form method="post" action="traitement.php">
+            <p>
+                <label for="prenom">Votre prenom :</label>
+                <input type="text" name="prenom" id="prenom" size="30" maxlength="10" /><br /><br />
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom"  size="30" maxlength="10" /><br /><br />
+                <label for="entreprise">Le nom de votre entreprise :</label>
+                <input type="text" name="entreprise" id="entreprise"  size="30" maxlength="10" /><br /><br />
+                <label for="email">Votre email :</label>
+                <input type="text" name="email" id="email"  size="30" maxlength="10" /><br /><br />
+                <label for="communication">Autre moyen de communication :</label><br />
+                <textarea name="communication" id="communication"></textarea><br /><br />
+                <label for="specification">Avez vous des choses à ajouter ? :</label><br />
+                <textarea name="specification" id="specification"></textarea><br /><br />
+                <a class="hide" href="https://docs.google.com/forms/d/e/1FAIpQLSeCXKuFaBD-mknDMEf6AaEZhQRwfLVKGSFV1jJuoFhpMmRiyg/viewform?usp=sf_link">Lien gg Form</a>
+                </form>
+            </p>
+        </form>
     </section>
 
   <div class="perso">
