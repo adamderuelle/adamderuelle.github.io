@@ -21,7 +21,7 @@ Styles perso
     padding: 10px;
 }
 
-.git_button {
+.button {
     background-color: #484FF5;
     border: none;
     color: white;
@@ -33,6 +33,11 @@ Styles perso
     display: block;
     margin-bottom: 40px;
     border-radius: 1rem;
+}
+
+
+.button:hover{
+    background-color: #3F709C;
 }
 
 .go_up_button:hover{
