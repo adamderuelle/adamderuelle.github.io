@@ -1,129 +1,57 @@
-<!DOCTYPE html>
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-      <meta name="author" content="">
-
-      <title>A propos de moi</title>
+{% extends 'base.html' %}
 
 
-      
+{% block content %}
 
-      <!-- Bootstrap core CSS -->
-      <link href="./assets/bootstrap.min.css" rel="stylesheet">
-      <link rel="shortcut icon" type="image/png" href="Images/favicon.png"/>
+<main>
 
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-10 col-md-8 mx-auto">
+        <img src="./images/img.jpg" alt="Image de moi" style="max-width:100%;" />
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <p class="lead text-muted">Adam 17 ans, peux coder en Python et C#. Aime les jeux-vidéos les créer comme y jouer. Passioné par la culture Japonnaise, les animés, les mangas et surtout la nourriture.
+        </p>
+      </div>
+    </div>
+  </section>
 
-
-      <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>
-
-      
-    </head>
-    <body>
-      
-  <header>
+  <div class="album py-5">
     <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">Adam Deruelle</span>
-        </a>
-
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Acceuil</a></li>
-          <li class="nav-item"><a href="me.html" class="nav-link">Qui suis-je?</a></li>
-          <li class="nav-item"><a href="my projects.html" class="nav-link">Mes projets</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contactez moi</a></li>
-        </ul>
-      </header>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-10 col-md-8 mx-auto">
-          <img src="./images/img.jpg" alt="Image de moi" style="max-width:100%;" />
+      <div class="row">
+        <div class="col col-md-3">
+          <h3>Parcours</h3>
+          <p>A commencé a coder en 3éme avec Scratch puis avec Python en Seconde mais aussi en C# pour créer mes propres jeux Unity. Et cette année un approfondissement des bases et découverte du traitement de données et de la programmation orienté objet.</p>
         </div>
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <p class="lead text-muted">Adam 17 ans, peux coder en Python et C#. Aime les jeux-vidéos les créer comme y jouer. Passioné par la culture Japonnaise, les animés, les mangas et surtout la nourriture.
-          </p>
+        <div class="col col-md-8">
+          <a href="https://www.bloodianchronicles.com/wp-content/uploads/Tutorial2/2d-live-training.jpg">
+            <img src="./Images/Unity example.jpg" alt="Example interface Unity" style="max-width: 70%;" />
+          </a>
         </div>
+
       </div>
-    </section>
-
-    <div class="album py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col col-md-3">
-            <h3>Parcours</h3>
-            <p>A commencé a coder en 3eme avec Scartch puis avec Python en Seconde mais aussi en C# pour créer mes propres jeux Unity. Et cette année un approfondissement des bases et découverte du traitement de données et de la programmation orienté objet.</p>
-          </div>
-          <div class="col col-md-8">
-            <a href="https://www.bloodianchronicles.com/wp-content/uploads/Tutorial2/2d-live-training.jpg">
-              <img src="./Images/Unity example.jpg" alt="Example interface Unity" style="max-width: 70%;" />
-            </a>
-          </div>
-
+      <div class="row">
+        <div class="col col-md-3">
+          <h3>Compétences</h3>
+          <ul>
+            <li>Ingénieux</li>
+            <li>Respectueux</li>
+            <li>Motivé</li>
+            <li>Sociable</li>
+            <li>Parle bien Anglais</li>
+            <li>Peut s’autoformer.</li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col col-md-3">
-            <h3>Compétences</h3>
-            <ul>
-              <li>Ingéieux</li>
-              <li>Respectueux</li>
-              <li>Motivé</li>
-              <li>Sociable</li>
-              <li>Parle bien Anglais</li>
-              <li>Peut s’autoformer.</li>
-            </ul>
-          </div>
-          <div class="col col-md-8">
-            <a href="https://i.ytimg.com/vi/og31B02dlFs/maxresdefault.jpg">
-              <img src="./Images/Python example.jpg" alt="Exemple partie d'un code Python" style="max-width:70%;" />
-            </a>
-          </div>
+        <div class="col col-md-8">
+          <a href="https://i.ytimg.com/vi/og31B02dlFs/maxresdefault.jpg">
+            <img src="./Images/Python example.jpg" alt="Exemple partie d'un code Python" style="max-width:70%;" />
+          </a>
         </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer>
-  <div>
-    <a class="go_up_button" href="#"><strong> Revenir en haut</strong></a>
-  </div>
-  <div class="footer_info">
-    <div class="row row-cols-1">
-      <div class="row col-md-4">
-        <h3>Pour mieux me connaître</h3>
-        <a href="me.html">Qui suis-je?</a>
-        <a href="my projects.html">Mes projets</a>
-      </div>
-      <div class="row col-md-4">
-        <h3>Contactez moi</h3>
-        <p>adam.deruelle@gmail.com</p>
-        <p>07 6* ** ** *8</p>
       </div>
     </div>
   </div>
-  </footer>
 
-  <script src="./index_files/bootstrap.bundle.min.js"></script>
-
-  </body>
-</html>
+</main>
+  
+{% endblock %}
