@@ -73,3 +73,7 @@ a:hover{
 .hide{
     color: white;
 }
+
+.contenu{
+    flex: 1 0 auto;
+}
